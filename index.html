@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 class="title">DOGGOS</h1>
+</head>
+
+<body>
+    <div class="pictures">
+        <div class="column">
+            <img
+                src="https://www.fitmin.pl/data/original/filemanager/Nowo%C5%9Bci%20PL/Stycze%C5%84%202022/akita-inu.jpg">
+            <img src="https://wattention.com/wp-content/uploads/2018/08/AKITAINU-MAIN-1.jpg">
+            <img
+                src="https://content.fun-japan.jp/renewal-prod/cms/articles/content/shutterstock1481706194jpg_2021-03-03-03-15-17.jpg">
+        </div>
+        <div class="column">
+            <img src="https://zooart.com.pl/blog/wp-content/uploads/2021/11/Shiba-inu-piesel.jpg">
+            <img src="https://analyticsinsight.b-cdn.net/wp-content/uploads/2022/04/Shiba-Inu-1024x682.jpeg">
+            <img src="https://forkast.news/wp-content/uploads/2022/02/SHIB-1260x879.jpg">
+        </div>
+        <div class="column">
+            <img src="https://wattention.com/wp-content/uploads/2019/07/AKITA_SG4960.jpg ">
+            <img src="https://static.fajnyzwierzak.pl/media/uploads/media_image/original/wpis/491/akita-japonska.jpg">
+            <img src="https://hellobark.com/wp-content/uploads/akita-1200-1.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    @keyframes example {
+        0% {
+            background-color: #ff9100;
+        }
+
+        50% {
+            background-color: #ffc524;
+        }
+
+        100% {
+            background-color: #ff9100;
+        }
+    }
+
+    body {
+        background-color: #ffc524;
+        animation-name: example;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+
+
+    .title {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 50px;
+        background-color: #ffc624;
+        animation-name: example;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 10s linear infinite;
+    }
+
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+
+
+    .pictures {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20 4px;
+        justify-content: center;
+        border-color: black;
+    }
+
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
